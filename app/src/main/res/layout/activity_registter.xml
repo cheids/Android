@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/register_sign"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="72dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/register_sign"
+        android:typeface="monospace"
+        android:textSize="32dp"
+        android:textColor="#6D8FA1"/>
+
+    <EditText
+        android:id="@+id/register_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_sign"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/login_view"
+        android:hint="输入注册的用户名"
+        android:inputType="text"
+        android:textColor="@color/grey"
+        android:padding="0dp"
+        android:textColorHint="#6D8FA1" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_user"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/login_view"
+        android:hint="输入注册的密码"
+        android:inputType="text"
+        android:textColor="@color/grey"
+        android:padding="0dp"
+        android:textColorHint="#6D8FA1" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_password"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/login_view"
+        android:text="注 册"
+        android:textColor="#6D8FA1"
+        android:textSize="30dp"/>
+
+
+</RelativeLayout>

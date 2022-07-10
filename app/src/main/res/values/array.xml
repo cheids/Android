@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="class_array">
+        <item>大一年级</item>>
+        <item>大二年级</item>>
+        <item>大三年级</item>>
+        <item>大四年级</item>>
+    </string-array>
+
+
+    <string-array name="leixing">
+        <item>展示</item>
+        <item>问答</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="leixing1">
+        <item>老师</item>
+        <item>学生</item>
+    </string-array>
+</resources>

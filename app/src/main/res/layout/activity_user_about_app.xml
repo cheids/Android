@@ -1,0 +1,79 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="120sp"
+    tools:context=".activity.UserAboutAppActivity">
+    <ImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@mipmap/app_icon"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image_about_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image_about_logo"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:id="@+id/text_about_appname"/>
+    <TextView
+        android:id="@+id/api_level_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:typeface="sans"
+        tools:text="API level"
+        android:layout_below="@id/text_about_appname"
+        android:textSize="10sp"/>
+    <Button
+        android:id="@+id/about_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="客 服 电 话"
+        android:padding="10dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/api_level_text_view"
+        android:layout_marginTop="72dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:onClick="officialSite1" />
+    <Button
+        android:id="@+id/about_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="地 图 导 航"
+        android:padding="10dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/about_tel"
+        android:layout_marginTop="24dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:onClick="officialSite2" />
+    <Button
+        android:id="@+id/about_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="视 频 介 绍"
+        android:padding="10dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/about_map"
+        android:layout_marginTop="24dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:onClick="officialSite3"/>
+
+</RelativeLayout>

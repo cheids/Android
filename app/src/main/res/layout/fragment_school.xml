@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toobar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/quanbu"
+            android:text="全部"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:background="@drawable/bian1"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/zhanshi"
+            android:text="展示"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:background="@drawable/bian1"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/wenda"
+            android:text="问答"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/bian1"
+            android:textColor="#000"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tongzhi"
+            android:text="通知"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@drawable/bian1"
+            android:textColor="#000"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+    <!--        android:id="@+id/swiper"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:id="@+id/rl_home"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"/>-->
+    <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+    <ListView
+        android:id="@+id/listdatas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

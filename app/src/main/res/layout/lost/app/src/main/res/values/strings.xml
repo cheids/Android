@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">寻物</string>
+
+
+    <!-- 我的部分-->
+    <string name="name">用户名：</string>
+    <string name="sex">性别：</string>
+    <string name="chose_sex">性别：</string>
+    <string name="boy">男</string>
+    <string name="gril">女</string>
+    <string name="birth">生日：</string>
+    <string name="hobby">爱好:</string>
+
+
+
+    <string name="meng">王蒙雨，女，天津职业技术师范大学，信息技术工程学院，软件1901</string>
+    <string name="tong">李欣桐，女，天津职业技术师范大学，信息技术工程学院，软件1901</string>
+    <string name="li">林晓丽，女，天津职业技术师范大学，信息技术工程学院，软件1901</string>
+
+</resources>

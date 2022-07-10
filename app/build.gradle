@@ -1,0 +1,97 @@
+plugins {
+    id 'com.android.application'
+}
+
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "android.bignerdranch.lost"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+//repositories {
+//    mavenCentral()
+//    google()
+//    maven {
+//        url "https://repo.spring.io/release"
+//    }
+//    maven {
+//        url "https://repository.jboss.org/maven2"
+//    }
+//
+//    flatDir {
+//        dirs 'libs'
+//    }
+//
+//    flatDir {
+//        dirs 'lib1', 'lib2'
+//    }
+//}
+
+
+dependencies {
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    //手机图片限获取注入
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.github.florent37:viewanimator:1.1.0'
+    //UI框架注入
+    implementation "com.qmuiteam:qmui:1.1.7"
+    implementation 'com.hjq:xxpermissions:9.6'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.github.wildma:PictureSelector:2.1.0'
+    implementation 'de.greenrobot:eventbus:3.0.0-beta1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    implementation 'com.github.florent37:viewanimator:1.1.0'
+    implementation "com.qmuiteam:qmui:1.1.7"
+    implementation 'com.hjq:xxpermissions:9.6'
+    implementation 'com.android.support:multidex:1.0.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.liwy.easyhttp:easyhttp:1.0.7'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //butterknife 注入
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+}
